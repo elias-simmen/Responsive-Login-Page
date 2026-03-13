@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  height: 50px;
+  color: #ffffff;
+  background-color: #2487c6;
+}
+
+.content {
+  flex-grow: 1;
+  background-color: #f7f7f7;
+
+  /* Flexbox zum Einmitten des Inhalts */
+  display: flex;
+  justify-content: center;
+}
+
+.content-inner {
+  /* Padding damit Text nicht am Rand klebt */
+  padding: 20px;
+
+  /* Max-width damit nicht zu viele Wörter pro Zeile */
+  max-width: 800px;
+
+  /* Volle Breite auf kleinen Bildschirmen */
+  width: 100%;
+}
